@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "react-native",
+    "lib": ["es6", "es2016"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "strict": true,
+    "target": "ESNext",
+    "outDir": "./lib/dist",
+    "experimentalDecorators": true
+  },
+  "include": ["lib"],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "tests",
+    "Playground",
+    "**/__tests__/**/*",
+    "**/__stories__/**/*",
+    "*.test.ts",
+    "*.test.tsx"
+  ]
+}
