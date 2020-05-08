@@ -4,11 +4,11 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "jsx": "react-native",
-    "lib": ["es6", "es2016"],
+    "lib": ["ESNext"],
     "moduleResolution": "node",
     "noEmit": true,
     "strict": true,
-    "target": "esnext",
+    "target": "ESNext",
     "baseUrl": "./src",
     "paths": {
       "*": ["*", "*.ios", "*.android"],

@@ -1,16 +1,21 @@
 {
   "compilerOptions": {
-    "allowJs": true,
+    "allowJs": false,
     "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "declaration": true,
+    "declarationMap": true,
+    "diagnostics": true,
     "esModuleInterop": true,
     "jsx": "react-native",
-    "lib": ["es6", "es2016"],
-    "moduleResolution": "node",
-    "noEmit": true,
+    "outDir": "./lib/dist",
+    "pretty": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
     "strict": true,
     "target": "ESNext",
-    "outDir": "./lib/dist",
-    "experimentalDecorators": true
+    "moduleResolution": "node",
+    "lib": ["ESNext"]
   },
   "include": ["lib"],
   "exclude": [
