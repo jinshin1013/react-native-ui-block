@@ -36,6 +36,25 @@ export type BaseTextProps = {
    */
   fontSize?: number
   /**
+   * Font weight style.
+   */
+  fontWeight?:
+    | 'normal'
+    | 'bold'
+    | '100'
+    | '200'
+    | '300'
+    | '400'
+    | '500'
+    | '600'
+    | '700'
+    | '800'
+    | '900'
+  /**
+   * Font style.
+   */
+  fontStyle?: 'normal' | 'italic'
+  /**
    * Text transform style.
    */
   textTransform?: 'none' | 'capitalize' | 'uppercase' | 'lowercase'
@@ -63,6 +82,8 @@ export const BaseText: React.FC<BaseTextProps> = ({
   margin,
   textAlign,
   fontSize,
+  fontWeight,
+  fontStyle,
   textTransform,
   style,
   UnderlyingText,
@@ -103,6 +124,14 @@ export const BaseText: React.FC<BaseTextProps> = ({
          */
         textTransform,
         /**
+         * Font weight style.
+         */
+        fontWeight,
+        /**
+         * Font style.
+         */
+        fontStyle,
+        /**
          * Padding style.
          */
         padding: isNumber(padding) ? padding : undefined,
@@ -123,7 +152,7 @@ export const BaseText: React.FC<BaseTextProps> = ({
         marginVertical: !isNumber(margin) ? margin?.vertical : undefined,
         marginHorizontal: !isNumber(margin) ? margin?.horizontal : undefined,
       }),
-    [flex, size, color, fontSize, textAlign, textTransform, padding, margin]
+    [flex, size, color, fontSize, fontWeight, fontStyle, textAlign, textTransform, padding, margin]
   )
 
   if (UnderlyingText) {
