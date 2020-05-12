@@ -4,6 +4,13 @@ import { Routes } from './routes/routes'
 import { registerScreens } from './routes/screens'
 
 Navigation.events().registerAppLaunchedListener(() => {
+  Navigation.setDefaultOptions({
+    topBar: {
+      backButton: {
+        showTitle: false,
+      },
+    },
+  })
   registerScreens()
 
   Navigation.setRoot({

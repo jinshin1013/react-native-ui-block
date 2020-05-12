@@ -22,6 +22,14 @@ export const Home: RootType<HomeProps> = ({ componentId }) => {
     })
   }
 
+  const onAnimatorDemoScreenPush = () => {
+    return Navigation.push(componentId, {
+      component: {
+        name: Routes.AnimatorDemo,
+      },
+    })
+  }
+
   return (
     <ScrollView contentContainerStyle={styles.wrapper}>
       {/* Explore BaseLayout section. */}
@@ -55,6 +63,7 @@ export const Home: RootType<HomeProps> = ({ componentId }) => {
       <BaseLayout margin={{ bottom: 20 }}>
         <TouchableOpacity
           activeOpacity={1}
+          onPress={onAnimatorDemoScreenPush}
           onPressIn={() => setAnimVisible2(true)}
           onPressOut={() => setAnimVisible2(false)}
         >
@@ -74,7 +83,7 @@ export const Home: RootType<HomeProps> = ({ componentId }) => {
               animation={{ scale: [1, 1.1] }}
               config={{ unmount: false }}
             >
-              Explore BaseText
+              Explore Animator
             </Animator.Text>
           </Animator.View>
         </TouchableOpacity>
