@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ScrollView, TouchableOpacity } from 'react-native'
+import { ScrollView, TouchableOpacity, TouchableWithoutFeedback } from 'react-native'
 import { BaseLayout, Animator, BaseText } from '../../../../lib'
 
 import { RootType } from '../../routes/types'
@@ -61,8 +61,7 @@ export const Home: RootType<HomeProps> = ({ componentId }) => {
       </BaseLayout>
 
       <BaseLayout margin={{ bottom: 20 }}>
-        <TouchableOpacity
-          activeOpacity={1}
+        <TouchableWithoutFeedback
           onPress={onAnimatorDemoScreenPush}
           onPressIn={() => setAnimVisible2(true)}
           onPressOut={() => setAnimVisible2(false)}
@@ -86,7 +85,7 @@ export const Home: RootType<HomeProps> = ({ componentId }) => {
               Explore Animator
             </Animator.Text>
           </Animator.View>
-        </TouchableOpacity>
+        </TouchableWithoutFeedback>
       </BaseLayout>
     </ScrollView>
   )

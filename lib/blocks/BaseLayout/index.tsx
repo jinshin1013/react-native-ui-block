@@ -4,7 +4,6 @@ import { View, ViewProps, ViewStyle } from 'react-native'
 import { AlignItem, JustifyContent, Spacing, Size, Corner, Direction } from '../types'
 import { createStyles } from '../utils/createStyle'
 import { isNumber, isString } from '../utils/is'
-import { Omit } from '../utils/omit'
 
 export type BaseLayoutProps = {
   /**
@@ -60,6 +59,10 @@ export type BaseLayoutProps = {
     bottom?: number
   }
   /**
+   * Overflow style.
+   */
+  overflow?: 'hidden' | 'scroll' | 'visible'
+  /**
    * Underlying View Component. This has to be a typeof `View` component.
    *
    * ie: `UnderlyingView={Animated.View}`
@@ -83,6 +86,7 @@ export const BaseLayout: React.FC<BaseLayoutProps> = ({
   margin,
   border,
   position,
+  overflow,
   style,
   UnderlyingView,
   ...props
@@ -191,8 +195,25 @@ export const BaseLayout: React.FC<BaseLayoutProps> = ({
         left: position?.left,
         right: position?.right,
         bottom: position?.bottom,
+
+        /**
+         * Overflow style.
+         */
+        overflow,
       }),
-    [flex, direction, size, backgroundColor, position, vAlign, hAlign, padding, margin, border]
+    [
+      flex,
+      direction,
+      size,
+      backgroundColor,
+      position,
+      vAlign,
+      hAlign,
+      padding,
+      margin,
+      border,
+      overflow,
+    ]
   )
 
   if (UnderlyingView) {
