@@ -28,6 +28,11 @@ export const commonAnimationLists: (keyof CommonAnimations)[] = [
   'margin',
   'marginBottom',
   'marginTop',
+  'left',
+  'top',
+  'left',
+  'bottom',
+  'right',
 ]
 
 export const viewAnimationList: (keyof ViewAnimations)[] = [

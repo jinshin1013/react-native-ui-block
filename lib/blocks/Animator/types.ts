@@ -96,6 +96,10 @@ export type CommonAnimations = {
   margin?: NumberInterpolation
   marginTop?: NumberInterpolation
   marginBottom?: NumberInterpolation
+  top?: NumberInterpolation
+  left?: NumberInterpolation
+  bottom?: NumberInterpolation
+  right?: NumberInterpolation
 }
 
 /**
