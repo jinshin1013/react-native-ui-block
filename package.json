@@ -1,6 +1,6 @@
 {
   "name": "react-native-ui-block",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A collection of simple React Native UI blocks to quickly build React Native apps.",
   "main": "lib/dist/index.js",
   "author": "Jin Shin <jinshin1013@gmail.com>",
