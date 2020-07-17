@@ -1056,10 +1056,10 @@
     wcwidth "^1.0.1"
     ws "^1.1.0"
 
-"@react-native-community/slider@3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@react-native-community/slider/-/slider-3.0.0.tgz#ffbf78689fc0572fb5c1e2ccb61b2ef074d3dcd2"
-  integrity sha512-deNc3JHBHz24YN+0DTAocXfrYFIFc1DvsIriMJSsJlR/MvsLzoq2+qwaEN+0/LJ37pstv85wZWY0pNugk4e41g==
+"@react-native-community/slider@3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@react-native-community/slider/-/slider-3.0.3.tgz#830167fd757ba70ac638747ba3169b2dbae60330"
+  integrity sha512-8IeHfDwJ9/CTUwFs6x90VlobV3BfuPgNLjTgC6dRZovfCWigaZwVNIFFJnHBakK3pW2xErAPwhdvNR4JeNoYbw==
 
 "@types/color-name@^1.1.1":
   version "1.1.1"
